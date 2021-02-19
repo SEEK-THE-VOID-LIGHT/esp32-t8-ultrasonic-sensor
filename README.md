@@ -8,7 +8,7 @@ You will need the espressif IDF in order to compile the script from source or es
 
 ### Compile instructions from source:
 - navigate to source folder (this one)
-- get the idf tool: `source <your-idf-installation>/export.sh`
+- get the idf toolchain: `source <your-idf-installation>/export.sh`
 - set your board: for ESP32: `idf.py set-target esp32` | for ESP32S2: `idf.py set-target esp32s2`
 - compile: `idf.py build`
 - flash to chip: `idf.py -p <port> flash monitor`, but `monitor` is optional when you ude the T8 display
