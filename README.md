@@ -1,4 +1,4 @@
-# Ultrasonic Sensor Sript.
+# Ultrasonic Sensor Script.
 ## Disclaimer: I have not tested it on a chip other than the LILYGO TTGO T8. It should work on boards without a display too, but I do not guarantee it.
 You will need the espressif IDF in order to compile the script from source or esptool to flash the precompiled .bin files:
 
