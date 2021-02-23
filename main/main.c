@@ -132,10 +132,6 @@ void drawString(uint16_t x, uint16_t y, const char *p, uint16_t color);
 
 /* Send a command to the LCD. Uses spi_device_polling_transmit, which waits
  * until the transfer is complete.
- *
- * Since command transactions are usually small, they are handled in polling
- * mode for higher speed. The overhead of interrupt transactions is more than
- * just waiting for the transaction to complete.
  */
 void lcd_cmd( const uint8_t cmd)
 {
@@ -151,10 +147,6 @@ void lcd_cmd( const uint8_t cmd)
 
 /* Send data to the LCD. Uses spi_device_polling_transmit, which waits until the
  * transfer is complete.
- *
- * Since data transactions are usually small, they are handled in polling
- * mode for higher speed. The overhead of interrupt transactions is more than
- * just waiting for the transaction to complete.
  */
 void lcd_data( const uint8_t *data, int len)
 {
